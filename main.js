@@ -14,6 +14,6 @@ console.log('Mining Block 2...');
 // liorCoin.chain[1].data = {amount: 100};
 // liorCoin.chain[1].hash = liorCoin.chain[1].calculateBlockHash();
 
-// console.log('blockchain valid? ' , liorCoin.isChainValid());
+console.log('blockchain valid? ' , liorCoin.isChainValid());
 
 // console.log(JSON.stringify(liorCoin, null, 2));

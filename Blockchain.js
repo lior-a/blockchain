@@ -60,6 +60,11 @@ class Blockchain {
                 return false;
             }
 
+            // check that the current block id isn't the same as previous block id
+            if((currentBlock.id) === previousBlock.id) {
+                return false;
+            }
+
         }
 
         return true;
