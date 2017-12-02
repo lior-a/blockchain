@@ -10,6 +10,9 @@ Blockchain javascript project for educational purpose.
 6. Calculate the diffuclty: https://bitcoin.stackexchange.com/a/5840
 7. Improve validity of blockchain method.
 
+# Example of real block
+https://webbtc.com/block/000000000000000001f942eb4bfa0aeccb6a14c268f4c72d5fff17270da771b9
+
 # FAQ Blockchain
 How is difficulty calculated?
 
@@ -22,6 +25,9 @@ https://bitcoin.stackexchange.com/questions/4295/can-more-than-1-block-be-solved
 What keeps the average block time at 10 minutes?
 
 https://bitcoin.stackexchange.com/questions/855/what-keeps-the-average-block-time-at-10-minutes
+
+What is “difficulty” and how it relates to “target”?
+https://bitcoin.stackexchange.com/questions/8806/what-is-difficulty-and-how-it-relates-to-target?noredirect=1&lq=1
 
 More
 
