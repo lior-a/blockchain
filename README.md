@@ -12,13 +12,17 @@ Blockchain javascript project for educational purpose.
 
 # FAQ Blockchain
 How is difficulty calculated?
+
 https://bitcoin.stackexchange.com/questions/5838/how-is-difficulty-calculated
 
 Can more than 1 block be solved per 10 mins on average (LONG TERM)?
+
 https://bitcoin.stackexchange.com/questions/4295/can-more-than-1-block-be-solved-per-10-mins-on-average-long-term?rq=1
 
 What keeps the average block time at 10 minutes?
+
 https://bitcoin.stackexchange.com/questions/855/what-keeps-the-average-block-time-at-10-minutes
 
 More
+
 https://bitcoin.stackexchange.com/?tab=month
