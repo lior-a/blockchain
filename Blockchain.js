@@ -15,6 +15,7 @@ class Blockchain {
      * @return {object} object of the genesis block
      */
     genesisBlock() {
+        return new Block(0, '1512149263', 'Genesis Block', 0);
     }
 
     /**
@@ -22,6 +23,7 @@ class Blockchain {
      * @return {object} the last block
      */
     getLastBlock() {
+        return this.chain[this.chain.length -1];
     }
 
     /**
@@ -29,6 +31,13 @@ class Blockchain {
      * @param {object} newBlock new block that we want to add
      */
     addBlock(newBlock) {
+        // set the new block with the previous block's hash
+        newBlock.previousHash = this.getLastBlock().hash;
+
+        // mineNewBlock is our proof of work concept
+        newBlock.mineNewBlock(this.difficulty);
+
+        this.chain.push(newBlock);
     }
 
     /**
