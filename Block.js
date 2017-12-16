@@ -27,6 +27,7 @@ class Block {
      * @return {object} hashed with SHA250
      */
     calculateBlockHash() {
+        return crypto.SHA256(this.n + this.id + this.prevHash + this.timestamp + JSON.stringify(this.data)).toString();
     }
 
     /**
@@ -34,6 +35,16 @@ class Block {
      * @param  {int} difficulty number, can't be less than 1
      */
     mineNewBlock(difficulty) {
+        if (difficulty < 1) {
+            throw new Error('Difficulty can\'t be lower than 1');
+        }
+
+        while(this.hash.substring(0, difficulty) !== Array(difficulty + 1).join('0')) {
+            this.n++;
+            this.hash = this.calculateBlockHash();
+        }
+
+        console.log('Block Mined: ' + this.hash);
     }
 }
 
