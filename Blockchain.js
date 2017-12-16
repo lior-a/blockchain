@@ -45,6 +45,29 @@ class Blockchain {
      * @return {Boolean} is the blockchain valid or not.
      */
     isChainValid() {
+        // start from block #1 after the genesis block
+        for(let i = 1; i < this.chain.length; i++) {
+            const previousBlock = this.chain[i -1];
+            const currentBlock = this.chain[i];
+
+            // check that the current block hash is calculated correctly - if not, our chain is invalid
+            if(currentBlock.hash !== currentBlock.calculateBlockHash()) {
+                return false;
+            }
+
+            // check the current block with previous hash is similar to the previous block's hash
+            if(currentBlock.previousHash !== previousBlock.hash){
+                return false;
+            }
+
+            // check that the current block id isn't the same as previous block id
+            if((currentBlock.id) === previousBlock.id) {
+                return false;
+            }
+
+        }
+
+        return true;
     }
 }
 
