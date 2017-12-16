@@ -1,6 +1,12 @@
 # Javascript Basic Blockchain
 Blockchain javascript project for educational purpose.
 
+# Workshop
+1. clone the project locally.
+2. run the test watch task: `npm run test:watch`.
+3. git checkout to branch step-1: `git checkout step-1`.
+4. if working solo, go up to each branch `step-x` up to `step-6`.
+
 # Ideas:
 1. Add more information to the data object (from, to).
 2. P2P network.
@@ -27,6 +33,7 @@ What keeps the average block time at 10 minutes?
 https://bitcoin.stackexchange.com/questions/855/what-keeps-the-average-block-time-at-10-minutes
 
 What is “difficulty” and how it relates to “target”?
+
 https://bitcoin.stackexchange.com/questions/8806/what-is-difficulty-and-how-it-relates-to-target?noredirect=1&lq=1
 
 More
