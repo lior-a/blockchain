@@ -18,8 +18,8 @@ class Block {
         this.timestamp = timestamp;
         this.data = data;
         this.prevHash = prevHash;
-        this.hash = this.calculateBlockHash();
         this.n = 0;
+        this.hash = this.calculateBlockHash();
     }
 
     /**
